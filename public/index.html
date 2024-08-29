@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio del Video y Galería de Imágenes</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="bg-primary text-light py-1">
+        <div class="container text-center">
+            <h1 class="display-4 font-weight-bold">Te amo y lo sabes "Caminar de la Mano"</h1>
+            <p class="lead">recuerdame con esta musica, todo lo que pasamos juntos si? te amo bb </p>
+        </div>
+    </header>
+
+    <div class="container text-center my-2">
+        <div class="row">
+            <!-- Columna para el video y frases -->
+            <div class="col-md-6 mb-4">
+                <div id="video-container" class="d-flex flex-column align-items-center">
+                    <video id="video" controls autoplay playsinline>
+                        <source src="video.mp4" type="video/mp4">
+                        Tu navegador no soporta el elemento de video.
+                    </video>
+                    <div id="quote-box" class="quote-box mt-3">
+                        <p id="quote">"El amor no se mira, se siente."</p>
+                    </div>
+                    <button id="play-button" class="btn btn-primary mt-3">Reproducir Audio</button>
+                </div>
+            </div>
+
+            <!-- Columna para la galería de imágenes -->
+            <div id="image-gallery">
+                <div id="image-container">
+                    <img id="gallery-image" src="images/img1.jpg" class="img-fluid" alt="Imagen">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
